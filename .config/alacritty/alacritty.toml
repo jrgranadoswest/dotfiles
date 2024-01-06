@@ -1,0 +1,33 @@
+import = ["/home/jrgw/.config/alacritty/themes/themes/omni.toml"]
+
+[colors.primary]
+background = "0x000000"
+foreground = "0x50fa7b"
+
+[env]
+TERM = "alacritty"
+WINIT_X11_SCALE_FACTOR = "1.1"
+
+[font.normal]
+family = "Droid Sans mono"
+style = "Regular"
+
+[window]
+decorations = "full"
+dynamic_title = true
+# history = 10000
+# multiplier = 3
+opacity = 0.85
+startup_mode = "Windowed"
+
+# [scrolling]
+# history = 10000
+# multiplier = 3
+
+[window.dimensions]
+columns = 82
+lines = 24
+
+[window.padding]
+x = 0
+y = 0
