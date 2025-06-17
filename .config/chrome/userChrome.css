@@ -1,0 +1,132 @@
+@import url(navbar_tabs_oneliner.css);
+
+/* Remove window control buttons */
+.titlbar-max,
+.titlebar-min,
+.titlebar-close,
+.titlebar-button { display:none!important; }
+
+/* Remove "Private browsing" text label from private browsing windows*/
+#private-browsing-indicator-with-label > label {
+	display: none;
+}
+
+/* Hide "All Tabs" button when the tab bar isn't overflowing */
+#tabbrowser-tabs:not([overflow="true"]) ~ #alltabs-button {
+    display: none !important;
+}
+
+/* https://www.reddit.com/r/FirefoxCSS/comments/gdrrse/how_to_change_this_blue_highlighted_color_in_the/ */
+.urlbarView-row[selected] .urlbarView-row-inner {
+  border-radius: 5px !important;
+  background-color: #bd93f9 !important;
+  color: black !important;
+}
+
+/* Different color for links: */ 
+/*.urlbarView-row[selected] .urlbarView-url {color: #ff0000 !important;}*/
+/*.urlbarView-row:hover {border-radius: 0px !important;}*/
+/* Alt method: */
+/*
+#urlbar{
+  --autocomplete-popup-highlight-background: #bd93f9;
+}
+*/
+
+/* Context menu mods */
+/*
+menupopup {
+  --panel-color: var(--toolbar-color) !important;
+  --panel-background: #000000 !important;
+  --panel-border-color: #000000 !important;
+}
+
+
+#context-back:hover image,
+#context-forward:hover image,
+#context-reload:hover image,
+#context-stop:hover image,
+#context-bookmarkpage:hover image,
+#context-sep-navigation:hover {
+  background-color: #bd93f988 !important;
+}*/
+menuitem:hover, menu:hover {
+  -moz-appearance: none !important;
+  background-color: #bd93f988 !important;
+}
+menuitem, menu {
+  border-radius: 5px !important;
+}
+
+menupopup > *:not(label):not([disabled="true"]):not(.menu-iconic-left):not(.menu-accel-container):not(image):not(:hover) {
+    color: #ffffff !important;
+}
+menupopup:not(#BMB_bookmarksPopup) {
+    appearance: none !important;
+    background-color: #000000 !important;
+    border: none !important;
+    border-radius: 5px !important;
+    background-origin: border-box !important;
+    background-clip: content-box, border-box !important;
+    margin: 0px !important;
+}
+.menupopup-arrowscrollbox:not([part="arrowscrollbox"]),
+.menupopup-arrowscrollbox[exportparts="scrollbox: arrowscrollbox-scrollbox"] {
+    appearance: none !important;
+    background-color: transparent !important;
+    border-radius: 0px !important;
+    border: none !important;
+    overflow: hidden !important;
+}
+
+/* menupopup,
+menupopup menuitem,
+menupopup menu,
+menupopup menuseparator {
+  -moz-appearance: none !important;
+}
+
+menupopup,
+panel[type="autocomplete-richlistbox"] {
+  --panel-padding: 0px !important;
+  -moz-window-shadow: none !important;
+  border: 0 !important;
+  color: var(--text-color1) !important;
+  box-sizing: content-box !important;
+}
+
+
+panelview .toolbarbutton-1:not([disabled], [open], :active):is(:hover, :focus),
+toolbarbutton.subviewbutton:not([disabled], [open], :active):is(:hover, :focus),
+.navigable.subviewbutton:not([disabled], [open], :active):is(:hover, :focus),
+menu.subviewbutton:not([disabled], :active)[_moz-menuactive],
+menuitem.subviewbutton:not([disabled], :active)[_moz-menuactive],
+.widget-overflow-list .toolbarbutton-1:not([disabled], [open], :active):is(:hover, :focus),
+.toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton:not([disabled], [open], :active):is(:hover, :focus) {
+  background: #00ff00 !important;
+  color: #ffffff !important;
+}
+
+toolbarbutton.subviewbutton.unified-extensions-item-action:not([disabled], [open], :active):is(:hover, :focus) {
+  background: transparent !important;
+}
+
+findbar toolbarbutton.tabbable:-moz-focusring,
+toolbar:not(#PersonalToolbar) .toolbarbutton-1:-moz-focusring > .toolbarbutton-icon,
+toolbar:not(#PersonalToolbar) .toolbarbutton-1:-moz-focusring > .toolbarbutton-text,
+toolbar:not(#PersonalToolbar) .toolbarbutton-1:-moz-focusring > .toolbarbutton-badge-stack {
+  outline-offset: -1px !important;
+}
+
+menupopup menuitem:hover:not([disabled=true]),
+menupopup menu:hover:not([disabled=true]),
+.autocomplete-richlistitem:hover:not([disabled=true]):not([selected=true]) {
+  background-color: #00ff00 !important;
+}
+
+menupopup menuitem:hover:active:not([disabled=true]),
+menupopup menu:hover:active:not([disabled=true]),
+.autocomplete-richlistitem:hover:active:not([disabled=true]),
+.autocomplete-richlistitem[selected=true] {
+  background-color: #00ff00 !important;
+} */

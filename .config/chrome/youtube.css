@@ -1,0 +1,41 @@
+
+@-moz-document domain("youtube.com") {
+  :root {
+    --yt-live-chat-shimmer-background-color: rgba(1,1,1,0.4) !important;
+    --yt-live-chat-secondary-background-color: #000 !important;
+    --yt-live-chat-action-panel-background-color-transparent: rgba(0,0,0,0.8) !important;
+    --yt-spec-base-background: #000 !important;
+    --yt-spec-static-brand-black: #000 !important;
+    --yt-spec-filled-button-text: #000 !important;
+    --dark-theme-background-color: #000 !important;
+    --yt-swatch-tab-selected-text: #000 !important;
+    --ytd-searchbox-background: #000 !important;
+
+    --yt-spec-black-4: #000 !important;
+    --yt-spec-black-3: #000 !important;
+    --yt-spec-black-2: #000 !important;
+    --yt-spec-black-1: #000 !important;
+
+    --yt-spec-black-1-alpha-98: rgba(0, 0, 0, 0.98) !important;
+    --yt-spec-black-1-alpha-95: rgba(0, 0, 0, 0.95) !important;
+
+    --black0_hsl: 254, 25%, 0% !important;
+    --black1_hsl: 249, 23%, 1% !important;
+    --black2_hsl: 240, 21%, 5% !important;
+    --black3_hsl: 249, 18%, 10% !important;
+    --black4_hsl: 254, 12%, 15% !important;
+  }
+
+  #subscribe-button ytd-button-renderer {
+      display: none !important;
+  }
+
+  #menu, #voice-search-button {
+    display: none !important;
+  }
+  
+  /* #top-level-buttons-computed, #flexible-item-buttons {
+    display: none !important;
+  } */
+
+}

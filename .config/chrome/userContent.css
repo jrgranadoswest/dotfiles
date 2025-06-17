@@ -1,0 +1,15 @@
+/* @import url(discord.css); */
+@import url(youtube.css);
+
+/* Remove blue highlights */
+@-moz-document url("about:home"),
+               url("about:newtab") {
+  body {
+    --newtab-primary-action-background: #bd93f9 !important;
+    --newtab-background-color-secondary: #8d79ba !important;
+  }
+  span.context-menu {
+    background: black !important;
+    color: #ffffff !important;
+  }
+}
